@@ -1,5 +1,8 @@
 package com.dzt.mywaterapp;
 
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.location.Location;
 import android.support.v7.app.ActionBarActivity;
@@ -65,7 +68,17 @@ public class MainActivity extends ActionBarActivity implements OnMapReadyCallbac
         // Handle presses on the action bar items
         switch (item.getItemId()) {
             case R.id.action_settings:
-                Toast.makeText(this, "new activity with ifffffff", Toast.LENGTH_SHORT).show();
+                SharedPreferences myPreferences = getSharedPreferences("infoUsuario", Context.MODE_PRIVATE);
+                String sUsuario = myPreferences.getString("nombreUsuario","");
+
+                if(sUsuario == ""){
+                    startActivity(new Intent(this,AltaUsuario.class));
+                    this.finish();
+                }
+                else {
+                    startActivity(new Intent(this, Estadistica.class));
+                    this.finish();
+                }
             default:
                 return super.onOptionsItemSelected(item);
         }

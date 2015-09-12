@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.dzt.mywaterapp.AltaUsuario"><![CDATA[
+
+    TextView android:text="@string/hello_world" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    ]]>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Usuario"
+        android:ems="10"
+        android:id="@+id/Edt_Usuario"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Habitantes"
+        android:ems="10"
+        android:id="@+id/Edt_Habitantes"
+        android:layout_below="@+id/Edt_Usuario"
+        android:layout_alignLeft="@+id/Edt_Usuario"
+        android:layout_alignStart="@+id/Edt_Usuario" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="CantidadCarros"
+        android:ems="10"
+        android:id="@+id/Edt_CantidadCarros"
+        android:layout_below="@+id/Edt_Habitantes"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Litros Almacenables"
+        android:ems="10"
+        android:id="@+id/Edt_LitrosAlmacenables"
+        android:layout_below="@+id/Edt_CantidadCarros"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:id="@+id/Btn_Ok"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/Edt_LitrosAlmacenables"
+        android:layout_alignEnd="@+id/Edt_LitrosAlmacenables" />
+</RelativeLayout>
