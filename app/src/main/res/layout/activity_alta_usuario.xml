@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.dzt.mywaterapp.AltaUsuario">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:id="@+id/Btn_OK"
+        android:textColor="#ffffffff"
+        android:background="#ff1f88ff"
+        android:layout_below="@+id/Edt_LitrosAlmacenables"
+        android:layout_alignRight="@+id/Edt_LitrosAlmacenables"
+        android:layout_alignEnd="@+id/Edt_LitrosAlmacenables"
+        android:layout_marginTop="37dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Usuario"
+        android:ems="10"
+        android:id="@+id/Edt_Usuario"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="#ff1f88ff"
+        android:textColor="#ff1f88ff"
+        android:textColorHighlight="#ff1f88ff" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Habitantes"
+        android:ems="10"
+        android:id="@+id/Edt_Habitantes"
+        android:layout_below="@+id/Edt_Usuario"
+        android:layout_alignLeft="@+id/Edt_Usuario"
+        android:layout_alignStart="@+id/Edt_Usuario"
+        android:textColor="#ff1f88ff"
+        android:textColorHint="#ff1f88ff" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Litros Almacenables"
+        android:ems="10"
+        android:id="@+id/Edt_LitrosAlmacenables"
+        android:layout_below="@+id/Edt_CantidadCarros"
+        android:layout_alignLeft="@+id/Edt_CantidadCarros"
+        android:layout_alignStart="@+id/Edt_CantidadCarros"
+        android:textColorHint="#ff1f88ff"
+        android:textColor="#ff1f88ff" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Cantidad de carros"
+        android:ems="10"
+        android:id="@+id/Edt_CantidadCarros"
+        android:layout_below="@+id/Edt_Habitantes"
+        android:layout_alignLeft="@+id/Edt_Habitantes"
+        android:layout_alignStart="@+id/Edt_Habitantes"
+        android:textColorHint="#ff1f88ff"
+        android:textColor="#ff1f88ff" />
+</RelativeLayout>

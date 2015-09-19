@@ -1,0 +1,122 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+        android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.example.diego.waterapp_prueba.Estadistica"
+        android:id="@+id/contenedor1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Tiempo calculado"
+            android:id="@+id/Txt_TiempoCalculado"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="11.40"
+            android:textSize="28px"
+            android:textColor="#3c3f41" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/ahorrar"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="53dp"
+            android:layout_below="@+id/Txt_TiempoCalculado"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/textView2"
+            android:layout_toLeftOf="@+id/textView2" />
+        <TextView
+            android:layout_width="211dp"
+            android:layout_height="121dp"
+            android:text="En un lugar donde el agua es escasa como en nuestra region, es de gran importancia ahorrar agua en todas nuestras actividades."
+            android:id="@+id/textView2"
+            android:autoText="false"
+            android:textColor="#3c3f41"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/textView3"
+            android:layout_toEndOf="@+id/textView3"
+            android:textSize="24px" />
+
+
+        <TextView
+            android:layout_width="171dp"
+            android:layout_height="121dp"
+            android:text="Toma baños más cortos o instala una regadera de bajo flujo, pon una cubeta bajo la regadera, para colectar agua para regar."
+            android:id="@+id/textView3"
+            android:textColor="#3c3f41"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="24px" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2"
+            android:src="@drawable/regadera"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/textView3"
+            android:layout_above="@+id/textView4"
+            android:layout_below="@+id/textView2"
+            android:layout_toRightOf="@+id/textView3" />
+
+
+
+        <TextView
+            android:layout_width="171dp"
+            android:layout_height="121dp"
+            android:text="Añade colorante al agua del tanque. Si después de 30 minutos aparece color en la taza, tienes una fuga. Enjuaga rápido para que no se coloree la taza."
+            android:id="@+id/textView4"
+            android:textColor="#3c3f41"
+            android:layout_marginTop="43dp"
+            android:layout_below="@+id/textView3"
+            android:layout_alignRight="@+id/imageView2"
+            android:layout_alignEnd="@+id/imageView2"
+            android:textSize="24px" />
+
+
+
+
+
+
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="Volver a calcular"
+            android:id="@+id/Btn_volverCalcular"
+            android:layout_marginTop="40px"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#fdfdfe"
+            android:background="#1f88ff"
+            android:layout_below="@+id/textView4"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView4"
+            android:src="@drawable/sanitario"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/textView4"
+            android:layout_toStartOf="@+id/imageView2"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_toLeftOf="@+id/imageView2" />
+    </RelativeLayout>
+</ScrollView>
